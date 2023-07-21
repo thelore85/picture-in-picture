@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template project</title>
+    <title>Picture-in-Picture App</title>
     <script src="https://kit.fontawesome.com/7efa7486da.js" crossorigin="anonymous"></script>
     
     <!-- fav icon -->
@@ -19,9 +19,25 @@
 <body>
 <section id="main">
   <div class="wrapper">
-    <h1><i class="icon fa-sharp fa-solid fa-lemon"></i>This is the template title</h1>
+    <h1>
+      <i class="fa-solid fa-video"></i>
+      Picture In Picture App
+    </h1>
   </div>
 </section>
+
+
+ <!-- Video -->
+ <section id="pip">
+  <div class="wrapper">
+    <video id="video" controls height="360" width="640" hidden></video>
+  </div>
+  <div class="button-container">
+    <button id="pip-select" class="btn btn-info">Select Source</button>
+    <button id="pip-show" class="btn btn-primary">Start pic in pic</button>
+  </div>
+</section>
+ <!-- Script  -->
 
 <script src="script.js"></script>
 </body>
